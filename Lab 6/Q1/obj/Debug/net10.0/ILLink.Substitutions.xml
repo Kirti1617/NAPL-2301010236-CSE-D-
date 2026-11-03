@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="DivisionApp">
+    <resource name="FSharpSignatureData.DivisionApp" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.DivisionApp" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.DivisionApp" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.DivisionApp" action="remove"></resource>
+    <resource name="FSharpOptimizationData.DivisionApp" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.DivisionApp" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.DivisionApp" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.DivisionApp" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.DivisionApp" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.DivisionApp" action="remove"></resource>
+  </assembly>
+</linker>

@@ -34,3 +34,8 @@ func mapOperations() {
 
 	fmt.Println("Final Map:", marks)
 }
+func main() {
+
+	sliceOperations()
+	mapOperations()
+}
