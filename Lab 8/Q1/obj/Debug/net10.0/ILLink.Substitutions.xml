@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="Q1">
+    <resource name="FSharpSignatureData.Q1" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.Q1" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.Q1" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.Q1" action="remove"></resource>
+    <resource name="FSharpOptimizationData.Q1" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.Q1" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.Q1" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.Q1" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.Q1" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.Q1" action="remove"></resource>
+  </assembly>
+</linker>
