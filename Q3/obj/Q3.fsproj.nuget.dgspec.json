@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NAPL-2301010236-CSE(D)\\Q3\\Q3.fsproj": {}
+    "C:\\NAPL-2301010111-CSE(B)\\Q3\\Q3.fsproj": {}
   },
   "projects": {
-    "C:\\NAPL-2301010236-CSE(D)\\Q3\\Q3.fsproj": {
+    "C:\\NAPL-2301010111-CSE(B)\\Q3\\Q3.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NAPL-2301010236-CSE(D)\\Q3\\Q3.fsproj",
+        "projectUniqueName": "C:\\NAPL-2301010111-CSE(B)\\Q3\\Q3.fsproj",
         "projectName": "Q3",
-        "projectPath": "C:\\NAPL-2301010236-CSE(D)\\Q3\\Q3.fsproj",
+        "projectPath": "C:\\NAPL-2301010111-CSE(B)\\Q3\\Q3.fsproj",
         "packagesPath": "C:\\Users\\kirti\\.nuget\\packages\\",
-        "outputPath": "C:\\NAPL-2301010236-CSE(D)\\Q3\\obj\\",
+        "outputPath": "C:\\NAPL-2301010111-CSE(B)\\Q3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kirti\\AppData\\Roaming\\NuGet\\NuGet.Config"

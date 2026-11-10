@@ -113,11 +113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NAPL-2301010236-CSE(D)\\Lab 6\\DivisionApp\\DivisionApp.fsproj",
-      "projectName": "DivisionApp",
-      "projectPath": "C:\\NAPL-2301010236-CSE(D)\\Lab 6\\DivisionApp\\DivisionApp.fsproj",
+      "projectUniqueName": "C:\\NAPL-2301010111-CSE(B)\\Lab 6\\Q1\\q1.fsproj",
+      "projectName": "q1",
+      "projectPath": "C:\\NAPL-2301010111-CSE(B)\\Lab 6\\Q1\\q1.fsproj",
       "packagesPath": "C:\\Users\\kirti\\.nuget\\packages\\",
-      "outputPath": "C:\\NAPL-2301010236-CSE(D)\\Lab 6\\DivisionApp\\obj\\",
+      "outputPath": "C:\\NAPL-2301010111-CSE(B)\\Lab 6\\Q1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kirti\\AppData\\Roaming\\NuGet\\NuGet.Config"
