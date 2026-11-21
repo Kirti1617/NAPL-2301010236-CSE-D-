@@ -1,50 +1,49 @@
-﻿// For more information see https://aka.ms/fsharp-console-apps
+﻿
+open Microsoft.Data.Sqlite
 
-open MongoDB.Bson
-open MongoDB.Driver
+let connection = new SqliteConnection("Data Source=students.db")
+connection.Open()
 
-// Connect to MongoDB
-let client = MongoClient("mongodb://localhost:27017")
-let database = client.GetDatabase("CollegeDB")
-let collection = database.GetCollection<BsonDocument>("Students")
-
-let id = ObjectId.GenerateNewId()
+let execute sql =
+    use cmd = connection.CreateCommand()
+    cmd.CommandText <- sql
+    cmd.ExecuteNonQuery() |> ignore
 
 let showData () =
-    let records = collection.Find(FilterDefinition<BsonDocument>.Empty).ToList()
+    use cmd = connection.CreateCommand()
+    cmd.CommandText <- "SELECT * FROM Students"
+    use reader = cmd.ExecuteReader()
+
     printfn "\nStudent Records:"
-    for student in records do
-        printfn "%O" student
+    while reader.Read() do
+        printfn "ID: %d Name: %s Age: %d"
+            (reader.GetInt32(0))
+            (reader.GetString(1))
+            (reader.GetInt32(2))
+
+// Create table
+execute "CREATE TABLE IF NOT EXISTS Students (Id INTEGER PRIMARY KEY, Name TEXT, Age INTEGER)"
+
+// Remove old test record
+execute "DELETE FROM Students WHERE Id = 1"
 
 // CREATE
-let student = BsonDocument()
-student.Add("_id", id)
-student.Add("Name", "Rahul")
-student.Add("Age", 20)
-
-collection.InsertOne(student)
+execute "INSERT INTO Students VALUES (1, 'Rahul', 20)"
 printfn "After CREATE:"
 showData()
 
 // READ
-let filter = Builders<BsonDocument>.Filter.Eq("_id", id)
-let result = collection.Find(filter).FirstOrDefault()
-
 printfn "\nAfter READ:"
-printfn "%O" result
+showData()
 
 // UPDATE
-let update = Builders<BsonDocument>.Update
-                 .Set("Name", "Aman")
-                 .Set("Age", 21)
-
-collection.UpdateOne(filter, update)
+execute "UPDATE Students SET Name = 'Aman', Age = 21 WHERE Id = 1"
 printfn "\nAfter UPDATE:"
 showData()
 
 // DELETE
-collection.DeleteOne(filter)
+execute "DELETE FROM Students WHERE Id = 1"
 printfn "\nAfter DELETE:"
 showData()
 
-
+connection.Close()
