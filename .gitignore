@@ -1,0 +1,43 @@
+# Go
+*.exe
+*.test
+vendor/
+
+# F#
+**/bin/
+**/obj/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+.py
+
+
+# Clojure cache
+.cpcache/
+.clj-kondo/.cache/
+.lsp/
+
+# Leiningen
+target/
+.lein/
+.nrepl-port
+
+# Java compiled files
+*.class
+*.jar
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
