@@ -1,0 +1,7 @@
+{:paths ["src"]
+ :deps
+ {org.clojure/clojure {:mvn/version "1.12.7"}
+  ring/ring-core {:mvn/version "1.12.2"}
+  ring/ring-jetty-adapter {:mvn/version "1.12.2"}
+  org.clojure/java.jdbc {:mvn/version "0.7.12"}
+  org.xerial/sqlite-jdbc {:mvn/version "3.46.1.0"}}}
