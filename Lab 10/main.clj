@@ -1,65 +1,34 @@
-
 (println "===== CLOJURE IMMUTABLE DATA STRUCTURES =====")
-
-;; 1. LIST OPERATIONS
 (println "\n--- LIST ---")
-
 (def my-list '(10 20 30 40))
-
 (println "Original List:" my-list)
 (println "First Element:" (first my-list))
 (println "Rest of List:" (rest my-list))
-
 (def new-list (conj my-list 5))
-
 (println "Original List (Unchanged):" my-list)
 (println "New List after conj:" new-list)
-
-
-;; 2. VECTOR OPERATIONS
 (println "\n--- VECTOR ---")
-
 (def my-vector [10 20 30 40])
-
 (println "Original Vector:" my-vector)
 (println "Vector after conj:" (conj my-vector 50))
 (println "Element at index 2:" (get my-vector 2))
 (println "Count of Vector:" (count my-vector))
-
 (println "Original Vector (Unchanged):" my-vector)
-
-
-;; 3. MAP OPERATIONS
 (println "\n--- MAP ---")
-
 (def my-map {:name "Aman" :age 21 :city "Delhi"})
-
 (println "Original Map:" my-map)
 (println "Get Name:" (get my-map :name))
-
 (def new-map (assoc my-map :course "CSE"))
-
 (println "New Map after assoc:" new-map)
-
 (def updated-map (dissoc my-map :city))
-
 (println "New Map after dissoc:" updated-map)
 (println "Original Map (Unchanged):" my-map)
-
-
-;; 4. SET OPERATIONS
 (println "\n--- SET ---")
-
 (def my-set #{10 20 30 40})
-
 (println "Original Set:" my-set)
 (println "Contains 20:" (contains? my-set 20))
-
 (def new-set (conj my-set 50))
-
 (println "New Set after conj:" new-set)
-
 (def updated-set (disj my-set 30))
-
 (println "New Set after disj:" updated-set)
 (println "Original Set (Unchanged):" my-set)
