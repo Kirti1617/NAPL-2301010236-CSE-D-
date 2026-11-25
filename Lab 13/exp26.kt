@@ -1,4 +1,3 @@
-
 fun main() {
     fun employee(name: String = "Kirti", age: Int = 22) {
         println("Name: $name")
